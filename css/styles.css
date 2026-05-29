@@ -287,11 +287,26 @@ body {
   }
 }
 
-.features-image {
+.features-illustration {
   width: 100%;
-  max-width: 400px;
-  height: auto;
+  max-width: 320px;
+  height: 220px;
+  background: linear-gradient(135deg, #ff8f70, #ff525d);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 30px rgba(255, 82, 93, 0.2);
+  margin-top: 2rem;
 }
+
+.circle-graphic {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
 
 
 
