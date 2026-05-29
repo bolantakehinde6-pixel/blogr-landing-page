@@ -155,4 +155,51 @@ body {
   color: var(--light-red-hero);
 }
 
+/* --- 5. DROPDOWN INTERACTIVE MENUS --- */
+.dropdown {
+  position: relative; /* Keeps the child menu anchored right under this button */
+}
+
+.dropdown-menu {
+  display: none; /* Hides the menu list by default */
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 5px;
+  list-style: none;
+  width: 150px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  margin-bottom: 0.75rem;
+}
+
+.dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-menu a {
+  color: var(--dark-blue-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: 'Ubuntu', sans-serif;
+  transition: font-weight 0.2s;
+}
+
+.dropdown-menu a:hover {
+  font-weight: 700;
+  color: #000000;
+}
+
+/* This is the magic rule linked to your JS toggle code */
+.dropdown.active .dropdown-menu {
+  display: block; /* Reveals the menu when the parent has the active class */
+}
+
 
